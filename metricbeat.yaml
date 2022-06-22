@@ -179,17 +179,17 @@ spec:
         ]
         env:
         - name: ELASTICSEARCH_HOST
-          value: https://my-deployment-70ec1b.es.us-central1.gcp.cloud.es.io  #change the value  to your host Ip address or DNS
+          value: 192.168.1.192  #change the value  to your host Ip address or DNS
         - name: ELASTICSEARCH_PORT
-          value: "9243"                            #Add the port on which your service is exposed.
+          value: "9200"                            #Add the port on which your service is exposed.
         - name: ELASTICSEARCH_USERNAME
           value: elastic                    #Username of elasticsearch. If you are not using any security leave it blank.
         - name: ELASTICSEARCH_PASSWORD
-          value: hTw5DxkCYslj45oFAdIkyawQ    #Passwd of elasticsearch. If you are not using any security leave it blank.
+          value: "sagarparmar"    #Passwd of elasticsearch. If you are not using any security leave it blank.
         - name: ELASTIC_CLOUD_ID            
-          value: "My_deployment:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJGYxZTU2NTVkN2MzNzQ4ODhiZDU4NWMwYTFhYWFhZDllJDQ0YzhhNGZmYjZiZTQ0NjJhYzRkOGFlMzgzNDdjNGI0"
+          value: ""
         - name: ELASTIC_CLOUD_AUTH
-          value: "elastic:hTw5DxkCYslj45oFAdIkyawQ"
+          value: ""
         - name: NODE_NAME
           valueFrom:
             fieldRef:
